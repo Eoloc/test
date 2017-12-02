@@ -1,18 +1,14 @@
 #include <iostream>
-#include <fstream>
 #include <string>
+#include "Duree.h"
 
 using namespace std;
 
 int main()
 {
-   ifstream fluxReadme("Readme.txt".c_str());
-   string textReadme;
-   
-   while(getline(fluxReadme, textReadme))
-   {
-      cout << textReadme << endl;
-   }
-   
-   return 0;
+  Duree duree1(0, 10, 28), duree2(0, 15, 2);
+  
+  return 0;
 }
+
+//alias "c"="g++ Duree.cpp main.cpp && ./a.out"
